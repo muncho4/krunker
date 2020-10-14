@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/krunker/static/css/main.28b5c244.chunk.css",
+    "main.js": "/krunker/static/js/main.96268784.chunk.js",
+    "main.js.map": "/krunker/static/js/main.96268784.chunk.js.map",
+    "runtime-main.js": "/krunker/static/js/runtime-main.80fe70ca.js",
+    "runtime-main.js.map": "/krunker/static/js/runtime-main.80fe70ca.js.map",
+    "static/js/2.e340177e.chunk.js": "/krunker/static/js/2.e340177e.chunk.js",
+    "static/js/2.e340177e.chunk.js.map": "/krunker/static/js/2.e340177e.chunk.js.map",
+    "index.html": "/krunker/index.html",
+    "precache-manifest.6974343f6313aa468f9ba3b1b65b3a8e.js": "/krunker/precache-manifest.6974343f6313aa468f9ba3b1b65b3a8e.js",
+    "service-worker.js": "/krunker/service-worker.js",
+    "static/css/main.28b5c244.chunk.css.map": "/krunker/static/css/main.28b5c244.chunk.css.map",
+    "static/js/2.e340177e.chunk.js.LICENSE.txt": "/krunker/static/js/2.e340177e.chunk.js.LICENSE.txt",
+    "static/media/AR.png": "/krunker/static/media/AR.7473b1fa.png",
+    "static/media/LMG.png": "/krunker/static/media/LMG.f8130aa3.png",
+    "static/media/SMG.png": "/krunker/static/media/SMG.21ac688b.png",
+    "static/media/alienBlaster.png": "/krunker/static/media/alienBlaster.a7d7fcfc.png",
+    "static/media/autoPistol.png": "/krunker/static/media/autoPistol.24c6618c.png",
+    "static/media/blaster.png": "/krunker/static/media/blaster.73db7ed8.png",
+    "static/media/crossbow.png": "/krunker/static/media/crossbow.567bdd11.png",
+    "static/media/deagle.png": "/krunker/static/media/deagle.eeceadac.png",
+    "static/media/famas.png": "/krunker/static/media/famas.b5337e73.png",
+    "static/media/pistol.png": "/krunker/static/media/pistol.c89266c3.png",
+    "static/media/revolver.png": "/krunker/static/media/revolver.73d20394.png",
+    "static/media/rocketLauncher.png": "/krunker/static/media/rocketLauncher.c36d07e9.png",
+    "static/media/sawedOff.png": "/krunker/static/media/sawedOff.ab0176f7.png",
+    "static/media/semiAuto.png": "/krunker/static/media/semiAuto.0d999d86.png",
+    "static/media/shotgun.png": "/krunker/static/media/shotgun.5a865cff.png",
+    "static/media/sniper.png": "/krunker/static/media/sniper.c6571f44.png",
+    "static/media/swapTime.png": "/krunker/static/media/swapTime.ac442332.png",
+    "static/media/uzi.png": "/krunker/static/media/uzi.50c35a0a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80fe70ca.js",
+    "static/js/2.e340177e.chunk.js",
+    "static/css/main.28b5c244.chunk.css",
+    "static/js/main.96268784.chunk.js"
+  ]
+}
