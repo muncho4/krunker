@@ -72,6 +72,7 @@ export default App;
 
 // new stories***
 
+// fix calc for shotguns
 // hover info for graphs
 // clean up creategraph (set defaults, etc)
 // custom x bounds
