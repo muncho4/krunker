@@ -1,0 +1,503 @@
+/* app */
+
+body {
+    margin: 0px;
+    background-color: rgb(50,50,50)
+}
+
+h1, h2, h3, h4, p, label, td, th, li {
+    font-family: "Arial"
+}
+
+h1 {
+    color: rgb(227, 184, 254);
+    margin-left: 10px;
+    margin-bottom: .25em;
+    margin-top: .25em;
+}
+
+#tabs {
+    display: flex;
+    margin-top: 10px;
+}
+
+.tab {
+    width: 200px;
+    height: 40px;
+    color: rgb(150,150,150);
+    background-color: rgb(80,80,80);
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab:hover {
+    color: rgb(50,50,50);
+    background-color: rgb(146, 190, 192);
+    cursor: pointer;
+}
+
+/* multiple */
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.large-graph {
+    width: 800px;
+}
+
+.select-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 150px;
+}
+
+/* charts */
+
+.small-graph {
+    width: 218px;
+}
+
+.wep-img {
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#weapon-rows {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weapon-row {
+    display: flex;
+    margin-bottom: 10px;
+    align-self: start;
+    background-color: rgb(160,160,160);
+}
+
+.weapon-row:hover {
+    background-color: rgb(146, 190, 192);
+    cursor: pointer;
+}
+
+.weapon-pic-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.weapon-pic-box > div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+}
+
+.wep-name {
+    font-size: 20px;
+}
+
+.dmg-graph-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.dmg-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ttk-graph-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.spread-circ {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 146px;
+}
+
+.spread-box {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-right: 18px;
+}
+
+.icon-col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-0 {
+    width: 100px;
+}
+
+.col-1 {
+    width: 112px;
+}
+
+.col-2 {
+    width: 145px;
+}
+
+.icon-row {
+    display: flex;
+    align-items: center;
+}
+
+.spread-icon {
+    display: none;
+}
+
+.icon {
+    width: 40px;
+    margin-right: 5px;
+}
+
+#charts-back {
+    width: 120px;
+    height: 40px;
+    background-color: rgb(160,160,160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#charts-back:hover {
+    background-color: rgb(146, 190, 192);
+}
+
+#info-box {
+    background-color: rgb(160,160,160);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-self: start;
+}
+
+#graphs-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#blobs {
+    width: 950px;
+}
+
+#blobs > div {
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+#hover-help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    position: absolute;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px rgba(0, 0, 0, .5);
+}
+
+.no-mouse {
+    pointer-events: none;
+}
+
+/* comparison */
+
+html {
+    position: relative;
+}
+
+#comparison-box {
+    background-color: rgb(160,160,160);
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-flex;
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+#comp-graphs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: start;
+}
+
+#select-boxes {
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#select-boxes > div {
+    margin-right: 10px;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+}
+
+#wep-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.column-title {
+    width: 145px;
+}
+
+#darkener {
+    background-color: rgba(0, 0, 0, .75);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#shots-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#shots-config {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 1000px;
+    background-color: rgb(160,160,160);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#shot-boxes {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.shot-box {
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+/* calc */
+
+#calc-box {
+    background-color: rgb(160,160,160);
+    width: 450px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+}
+
+#calc-select-boxes {
+    margin-right: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#num-input {
+    width: 80px;
+}
+
+#input-output {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+#input-output > div {
+    margin-right: 50px;
+}
+
+/* about */
+
+#about-box {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    background-color: rgb(160,160,160);
+    align-self: start;
+    max-width: 800px;
+}
+
+h4, h3 {
+    margin-bottom: 0px;
+    margin-top: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0px;
+}
+
+li {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+p {
+    margin-bottom: 0.5em;
+}
+
+.icon-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+.icon-desc > label {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 1307px) {
+    .spread-icon {
+        display: flex;
+    }
+
+    .spread-box {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1133px) {
+    .ttk-small, .ttk-graph-box {display: none;}
+}
+
+@media screen and (max-width: 905px) {
+    h1 {font-size: 3.7vw; margin-left: 1vw;}
+
+    label {font-size: 2vw;}
+
+    td, th {font-size: 3vw;}
+
+    p {font-size: 4vw;}
+
+    select {width: 20vw; font-size: 3vw;}
+
+    #weapon-rows {margin-left: 0px; margin-top: 0px;}
+
+    .weapon-row {margin-bottom: 1vw; width: 100vw;}
+
+    .tab {margin: 0px; height: 6vw; width: 24vw;}
+    
+    #tabs {justify-content: space-around; margin-top: 2vw; margin-bottom: 2vw;}
+
+    .tab-label {font-size: 3vw;}
+
+    #charts-back {margin-left: 2vw; height: 6vw; width: 20vw; margin-bottom: 2vw;}
+
+    .weapon-pic-box, .wep-img {width: 32vw; margin-left: 1vw}
+
+    .small-graph {width: 27vw;}
+
+    .icon-col {margin-right: 1vw; width: 12vw;}
+
+    .dmg-graph-box {padding: 0px; padding-top: 5px; padding-bottom: 5px; margin-right: 1vw}
+
+    .icon {width: 4vw;}
+    
+    .wep-name {font-size: 3vw;}
+
+    .weapon-pic-box {padding: 0px; padding-top: 5px;}
+
+    .dmg-box {margin-top: 1.5vw;}
+
+    .large-graph {max-width: 95vw;}
+
+    #info-box {max-width: 100vw; padding: 0px; padding-left: 2vw; margin-top: 1vw}
+
+    #comparison-box {margin-left: 0px;}
+
+    #calc-box {margin-left: 0px; width: 100vw; justify-content: center;}
+
+    #num-input {height: 3vw; width: 20vw}
+
+    #about-box {
+        margin-left: 0px;
+        width: 92vw;
+        margin-top: 2vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        margin-bottom: 0;
+    }
+
+    .about-par {font-size: 1em; text-align: justify;}
+
+    .column-title {width: 24vw;}
+
+    #hover-help {
+        padding: .5vw;
+        border-radius: 1.2vw;
+        box-shadow: 1vw 1vw rgba(0, 0, 0, .5);
+    }
+
+    #hover-help > label {font-size: 3vw}
+}
