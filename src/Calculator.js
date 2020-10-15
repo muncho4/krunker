@@ -21,6 +21,7 @@ class Calculator extends React.Component {
         if (numInput==="" || Number(numInput)<0) return "N/A"
         let num = Number(numInput)
         let mult = Number(hitArea) * Number(wallbang)
+        if (wep.pellets && currentCalc==="dist-to-ttk") mult = mult * wep.pellets
         let returnNum;
 
         if (currentCalc==="dist-to-dmg") returnNum = mult * f.distanceToDamage(num, wep)

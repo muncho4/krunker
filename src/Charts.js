@@ -225,16 +225,20 @@ class Charts extends React.Component {
         let wep = weapons[wepString]
 
         for (let property in wep) {
-            if (property==="pictureURL") continue;
+            let skipThese = ["pictureURL", "shortName", "burst"]
+            if (skipThese.includes(property)) continue;
             let propInfo = f.supplementProps[property]
-            let units = propInfo.units || " "
+            let units = ""
+            if (propInfo && propInfo.units) units = propInfo.units
             let value;
-            if (!propInfo.value) value = wep[property]
+            if (!propInfo || !propInfo.value) value = wep[property]
             else value = propInfo.value(wep)
             if (wep.burst && property==="timeBetweenShots") units = units + ` (${wep.burst}ms burst)`
             else if (wep.pellets && property==="damage") units = units + ` (x${wep.pellets})`
-            info.push(<p key={info.length}><strong>{propInfo.title || property}: </strong>{value + units}</p>)
-            if (propInfo.moreProps) {
+            let title = property
+            if (propInfo && propInfo.title) title = propInfo.title
+            info.push(<p key={info.length}><strong>{title}: </strong>{value + units}</p>)
+            if (propInfo && propInfo.moreProps) {
                 for (let addProp of propInfo.moreProps) {
                     let units = addProp.units || " "
                     let value = addProp.value(wep)

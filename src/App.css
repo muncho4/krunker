@@ -192,6 +192,7 @@ select {
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 #charts-back:hover {
