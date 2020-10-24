@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/krunker/static/css/main.b83e91d7.chunk.css",
-    "main.js": "/krunker/static/js/main.cf54961b.chunk.js",
-    "main.js.map": "/krunker/static/js/main.cf54961b.chunk.js.map",
+    "main.js": "/krunker/static/js/main.418fa9b5.chunk.js",
+    "main.js.map": "/krunker/static/js/main.418fa9b5.chunk.js.map",
     "runtime-main.js": "/krunker/static/js/runtime-main.80fe70ca.js",
     "runtime-main.js.map": "/krunker/static/js/runtime-main.80fe70ca.js.map",
     "static/js/2.e340177e.chunk.js": "/krunker/static/js/2.e340177e.chunk.js",
     "static/js/2.e340177e.chunk.js.map": "/krunker/static/js/2.e340177e.chunk.js.map",
     "index.html": "/krunker/index.html",
-    "precache-manifest.ca60f427a5b2dd4c92cd0c3eb66a2f6e.js": "/krunker/precache-manifest.ca60f427a5b2dd4c92cd0c3eb66a2f6e.js",
+    "precache-manifest.0ec07464aba040ef666cc193595d3aa6.js": "/krunker/precache-manifest.0ec07464aba040ef666cc193595d3aa6.js",
     "service-worker.js": "/krunker/service-worker.js",
     "static/css/main.b83e91d7.chunk.css.map": "/krunker/static/css/main.b83e91d7.chunk.css.map",
     "static/js/2.e340177e.chunk.js.LICENSE.txt": "/krunker/static/js/2.e340177e.chunk.js.LICENSE.txt",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.80fe70ca.js",
     "static/js/2.e340177e.chunk.js",
     "static/css/main.b83e91d7.chunk.css",
-    "static/js/main.cf54961b.chunk.js"
+    "static/js/main.418fa9b5.chunk.js"
   ]
 }
