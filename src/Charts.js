@@ -10,7 +10,8 @@ class Charts extends React.Component {
         this.state = {
             currentWep: null,
             hovering: false,
-            hoverText: null
+            hoverText: null,
+            storedYOffset: 0
         }
 
         this.selectWeapon = this.selectWeapon.bind(this)
@@ -26,6 +27,19 @@ class Charts extends React.Component {
     }
 
     selectWeapon(weapon) {
+        if (!weapon) {
+            let i = 0
+            let finalY = this.state.storedYOffset
+            window.scrollY = finalY
+            let pageJumpInterval = setInterval(() => {
+                window.scrollBy(0, finalY - window.pageYOffset)
+                if (window.pageYOffset >= finalY || i > 1000) clearInterval(pageJumpInterval)
+                i++
+            }, 10)
+        } else {
+            this.setState({storedYOffset: window.pageYOffset})
+            window.scroll(0, 0)
+        }
         this.setState({currentWep: weapon})
     }
 

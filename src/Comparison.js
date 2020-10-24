@@ -492,12 +492,12 @@ class Comparison extends React.Component {
                 if (propInfo.prefer && cleanWepsArray.length > 1) {
                     for (let wepString of cleanWepsArray) {
                         let wep = weapons[wepString]
-                        if (!propInfo.value) valueTotal += wep[property]
+                        if (!propInfo.value && !propInfo.numValue) valueTotal += wep[property]
                         else if (!propInfo.numValue) valueTotal += propInfo.value(wep)
                         else valueTotal += propInfo.numValue(wep)
                     }
                 }
-                let avgValue = valueTotal/cleanWepsArray.length
+                let avgValue = valueTotal / cleanWepsArray.length
 
                 for (let i=0; i<3; i++) { //for each weapon
                     let wepString = wepsArray[i]

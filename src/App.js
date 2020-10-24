@@ -46,7 +46,7 @@ class App extends React.Component {
 
         return (
             <div>
-                <h1>Krunker Weapon Stats v0.1 (Game Data v3.1.1)</h1>
+                <h1>Krunker Weapon Stats v0.1.1 (Game Data v3.1.6)</h1>
                 <div id="tabs">
                     <div className="tab" style={chartsTabStyle} onClick={() => this.changeComponent("charts")}>
                         <label className="tab-label"><strong>Charts</strong></label>
@@ -72,11 +72,9 @@ export default App;
 
 // new stories***
 
-// fix calc for shotguns
 // hover info for graphs
 // clean up creategraph (set defaults, etc)
 // custom x bounds
-// 2nd look for icons
 // better dark theme
 // fix comp data structure
 // linkable results
