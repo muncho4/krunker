@@ -475,7 +475,7 @@ p {
 
     #info-box {max-width: 100vw; padding: 0px; padding-left: 2vw; margin-top: 1vw}
 
-    #comparison-box {margin-left: 0px;}
+    #comparison-box {margin-left: 0px; margin-bottom: 0px}
 
     #calc-box {margin-left: 0px; width: 100vw; justify-content: center;}
 

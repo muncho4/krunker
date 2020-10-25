@@ -17,7 +17,7 @@ class About extends React.Component {
                 <p className="about-par">
                     Krunker Weapon Stats intended to provide in depth information about the weapons of <a href="http://krunker.io">Krunker.io</a>,
                     which is a first person shooter game playable within web browsers. Every weapon has different attributes and statistics
-                    that affect how it performs in game such as number of bullets per magasize or reload time. One of these attributes, damage,
+                    that affect how it performs in game such as number of bullets per magazine or reload time. One of these attributes, damage,
                     changes over distance in a way that was not clearly documented before (or at least I couldn't find much on it).
                 </p>
                 <p className="about-par">
@@ -27,8 +27,7 @@ class About extends React.Component {
 
                 <h3>What do the icons on the Charts tab mean?</h3>
                 <p className="about-par">
-                    If you are on a computer, you can hover over the icons to get a small popup that will tell you what the icon means. On mobile,
-                    you can tap icons to show the same info and then tap the popup to close it.
+                    If you are on a computer, you can hover over the icons to get a small popup that will tell you what the icon means.
                 </p>
 
                 <p className="about-par">Alternatively, here is a list of all of the icons and what they mean:</p>
@@ -89,7 +88,7 @@ class About extends React.Component {
                     resulting in an instantaneous kill for weapons such as the Shotgun and Sniper. Most weapons have "jumps" in TTK because as
                     distance increases, damage decreases until a critical point where the weapon requires an additional bullet to kill the target player.
                 </p>
-                <p>
+                <p className="about-par">
                     Weapons that do not have jumps in their TTK graphs usually have constant damage, or at least damage that does not change enough to
                     cause <strong>Bullets to Kill (BTK)</strong> (the number of shots it takes to kill a target player at a given range) to change.
                     This is true of all three projectile weapons (Crossbow, Blaster, and Rocket Launcher) since they all have constant damage. TTK
