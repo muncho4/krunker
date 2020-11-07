@@ -10,7 +10,7 @@ const weapons = {
         magSize: 30,
         reloadTime: 1400,
         swapTime: 300,
-        velocity: undefined, //fix this
+        velocity: undefined,
         range: 700,
         spread: 100,
         zoom: 1.6,
@@ -67,7 +67,7 @@ const weapons = {
         timeBetweenShots: 130,
         fireMode: "Auto",
         magSize: 60,
-        reloadTime: 3500,
+        reloadTime: 3400,
         swapTime: 700,
         range: 700,
         spread: 300,
@@ -156,7 +156,7 @@ const weapons = {
         speedMultiplier: 0.9,
         dmgDrop: 0,
         dropStart: 0,
-        velocity: 684
+        velocity: 713
     },
     uzi: {
         name: "Akimbo Uzi",

@@ -38,6 +38,8 @@ h1 {
     cursor: pointer;
 }
 
+.tab-label { cursor: pointer}
+
 /* multiple */
 
 .column {
