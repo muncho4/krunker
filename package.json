@@ -1,7 +1,7 @@
 {
   "name": "krunker",
   "homepage": "https://muncho4.github.io/krunker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

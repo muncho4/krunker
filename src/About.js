@@ -107,6 +107,122 @@ class About extends React.Component {
                     <li>The target is only hit in the body (unless other hit areas are specified)</li>
                 </ul>
 
+                <h3>Why are some TTK graphs blank and why do some end abruptly?</h3>
+                <p className="about-par">
+                    TTK graphs are based on <strong>Bullets to Kill (BTK)</strong>, and the graph ends when BTK is greater than the
+                    mag size for that weapon. This is because I personally don't see TTK as an important measurement once the mag
+                    is empty. This is especially noticable for the Sawed Off secondary shotgun since it only does 60 damage maximum
+                    and only has a one shell magazine. This means that this weapon cannot kill the enemy before the mag is empty and
+                    thus the graph is blank.
+                </p>
+
+                <h3>How are classes different beyond the stats of weapons?</h3>
+                <p className="about-par">
+                    Classes themselves (not just weapons) have different stats that affect things like player speed
+                    and HP.
+                    I am not sure what some of these stats are exactly (HP Regen for example) and how they translate to gameplay,
+                    and I removed a few like text lines, colors, and "segs" (?) but I thought I would add them anyway.
+                    In the future I might find a way to better integrate this info into this app, but for now I will just display
+                    it below.
+                </p>
+                <div>
+                    <h4>Triggerman</h4>
+                    <p className="about-par">
+                        Secondary: Yes,
+                        HP: 100,
+                        Speed: 1.05
+                    </p>
+                    <h4>Hunter</h4>
+                    <p className="about-par">
+                        Secondary: Yes,
+                        HP: 60,
+                        Speed: 1.05
+                    </p>
+                    <h4>Run N Gun</h4>
+                    <p className="about-par">
+                        Wall Jumping: Yes,
+                        HP: 100,
+                        Speed: 1.18
+                    </p>
+                    <h4>Spray N Pray</h4>
+                    <p className="about-par">
+                        HP: 170,
+                        HP Regen: .05,
+                        Speed: .95
+                    </p>
+                    
+                    <h4>Vince</h4>
+                    <p className="about-par">
+                        Secondary: Yes,
+                        HP: 90,
+                        Speed: 1
+                    </p>
+                    
+                    <h4>Detective</h4>
+                    <p className="about-par">
+                        HP: 100,
+                        Speed: 1
+                    </p>
+                    
+                    <h4>Marksman</h4>
+                    <p className="about-par">
+                        Secondary: Yes,
+                        HP: 90,
+                        Speed: 1
+                    </p>
+                    
+                    <h4>Rocketeer</h4>
+                    <p className="about-par">
+                        Secondary: Yes,
+                        HP: 130,
+                        Speed: .86
+                    </p>
+                    
+                    <h4>Agent</h4>
+                    <p className="about-par">
+                        Wall Jumping: Yes,
+                        HP: 100,
+                        Speed: 1.2
+                    </p>
+                    
+                    <h4>Runner</h4>
+                    <p className="about-par">
+                        Wall Jumping: Yes,
+                        HP: 120,
+                        Knife Throw Charge: 600,
+                        HP Regen: .2,
+                        Speed: 1
+                    </p>
+                    
+                    <h4>Deagler</h4>
+                    <p className="about-par">
+                        HP: 60,
+                        Speed: 1
+                    </p>
+                    
+                    <h4>Bowman</h4>
+                    <p className="about-par">
+                        Secondary: Yes,
+                        HP: 100,
+                        Speed: 1
+                    </p>
+                    
+                    <h4>Commando</h4>
+                    <p className="about-par">
+                        Secondary: Yes,
+                        HP: 100,
+                        Speed: 1
+                    </p>
+                    
+                    <h4>Trooper</h4>
+                    <p className="about-par">
+                        Wall Jumping: Yes,
+                        HP: 100,
+                        Speed: 1
+                    </p>
+                    
+                </div>
+
                 <h3>I've found a bug/I have feedback. How do I let you know?</h3>
                 <p className="about-par">
                     Please send bug reports, feedback, and feature ideas <a href="https://forms.gle/Z4y93t4kM4FP4yqA7">here</a>.

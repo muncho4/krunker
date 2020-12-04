@@ -67,7 +67,7 @@ const weapons = {
         timeBetweenShots: 130,
         fireMode: "Auto",
         magSize: 60,
-        reloadTime: 3400,
+        reloadTime: 3300,
         swapTime: 700,
         range: 700,
         spread: 300,

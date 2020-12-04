@@ -473,7 +473,7 @@ p {
 
     .dmg-box {margin-top: 1.5vw;}
 
-    .large-graph {max-width: 95vw;}
+    .large-graph {width: 100vw}
 
     #info-box {max-width: 100vw; padding: 0px; padding-left: 2vw; margin-top: 1vw}
 
@@ -503,4 +503,6 @@ p {
     }
 
     #hover-help > label {font-size: 3vw}
+
+    .calc-label {font-size: 3.5vw}
 }
