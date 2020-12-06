@@ -213,7 +213,7 @@ class Comparison extends React.Component {
                 perWeaponSelects.push(
                     <div key={i}>
                         <div className="select-box">
-                            <label>Enemy HP</label>
+                            <label className="select-label">Enemy HP</label>
                             <select
                                 name={`enemiesHP-${i}`} onChange={this.oneIndexInputChange}
                                 defaultValue={this.state.storedUnivEnemiesHP}
@@ -227,7 +227,7 @@ class Comparison extends React.Component {
                             </select>
                         </div>
                         <div className="select-box">
-                            <label>Hit Area</label>
+                            <label className="select-label">Hit Area</label>
                             <select 
                                 name={`hitAreas-${i}`} onChange={this.oneIndexInputChange}
                                 disabled={shotsSelectDisabled} defaultValue={this.state.storedUnivHitAreas}
@@ -238,7 +238,7 @@ class Comparison extends React.Component {
                             </select>
                         </div>
                         <div className="select-box">
-                            <label>Wallbang</label>
+                            <label className="select-label">Wallbang</label>
                             <select 
                                 name={`wallbangs-${i}`} onChange={this.oneIndexInputChange}
                                 disabled={shotsSelectDisabled} defaultValue={this.state.storedUnivWallbangs}
@@ -248,7 +248,7 @@ class Comparison extends React.Component {
                             </select>
                         </div>
                         <div className="select-box">
-                            <label>Shots Type</label>
+                            <label className="select-label">Shots Type</label>
                             <select name={`shotsType-${i}`} onChange={this.innerShotsTypeChange}>
                                 <option value="uniform">Uniform per Weapon</option>
                                 <option value="individual">Individual</option>
@@ -269,7 +269,7 @@ class Comparison extends React.Component {
             for (let i=0; i<numWeps; i++) {
                 wepSelectRows.push(
                     <div className="select-box" key={i}>
-                        <label>Weapon {i + 1}</label>
+                        <label className="select-label">Weapon {i + 1}</label>
                         <select name={`currentWeps-${i}`} onChange={this.oneIndexInputChange} defaultValue={this.state.currentWeps[i]}>
                             <option value="">none</option>
                             {wepOptions}
@@ -288,7 +288,7 @@ class Comparison extends React.Component {
                 weaponSelectors.push(
                     <div className="column" key={i}>
                         <div className="select-box">
-                            <label>Weapon {i + 1}</label>
+                            <label className="select-label">Weapon {i + 1}</label>
                             <select name={`currentWeps-${i}`} onChange={this.oneIndexInputChange} defaultValue={this.state.currentWeps[i]}>
                                 <option value="">none</option>
                                 {wepOptions}
@@ -305,14 +305,14 @@ class Comparison extends React.Component {
                 {weaponSelectors}
                 <div className="column">
                     <div className="select-box">
-                        <label>Shot types</label>
+                        <label className="select-label">Shot types</label>
                         <select name="shotsType" onChange={this.shotsTypeChange}>
                             <option value="uniform">Uniform</option>
                             <option value="per-weapon">Per Weapon</option>
                         </select>
                     </div>
                     <div className="select-box">
-                        <label>Enemy HP</label>
+                        <label className="select-label">Enemy HP</label>
                         <select name="enemiesHP" onChange={this.inputChange} disabled={disableUniformSelectors}>
                             <option value="100">Standard (100hp)</option>
                             <option value="60">Hunter (60hp)</option>
@@ -324,7 +324,7 @@ class Comparison extends React.Component {
                         </select>
                     </div>
                     <div className="select-box">
-                        <label>Hit Area</label>
+                        <label className="select-label">Hit Area</label>
                         <select name="hitAreas" onChange={this.inputChange} disabled={disableUniformSelectors}>
                             <option value="Body">Body</option>
                             <option value="Head">Head</option>
@@ -332,7 +332,7 @@ class Comparison extends React.Component {
                         </select>
                     </div>
                     <div className="select-box">
-                        <label>Wallbang</label>
+                        <label className="select-label">Wallbang</label>
                         <select name="wallbangs" onChange={this.inputChange} disabled={disableUniformSelectors}>
                             <option value="No">No</option>
                             <option value="Yes">Yes</option>
@@ -568,9 +568,9 @@ class Comparison extends React.Component {
         for (let i=0; i<maxBTK; i++) {
             blobs.push(
                 <div key={i} className="shot-box">
-                    <label><strong>Shot {i+1}</strong></label>
+                    <label className="select-label"><strong>Shot {i+1}</strong></label>
                     <div className="select-box">
-                        <label>Hit Area</label>
+                        <label className="select-label">Hit Area</label>
                         <select name={`hitAreas-${index}-${i}`} onChange={this.blobChange} defaultValue={this.state.hitAreas[index][i]}>
                             <option value="1">Body</option>
                             <option value={wep.headshotMult}>Head</option>
@@ -579,7 +579,7 @@ class Comparison extends React.Component {
                         </select>
                     </div>
                     <div className="select-box">
-                        <label>Wallbang</label>
+                        <label className="select-label">Wallbang</label>
                         <select name={`wallbangs-${index}-${i}`} onChange={this.blobChange} defaultValue={this.state.wallbangs[index][i]}>
                             <option value="1">No</option>
                             <option value={1 - (0.5 * wep.pierce)}>Yes</option>

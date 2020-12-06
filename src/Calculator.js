@@ -44,7 +44,7 @@ class Calculator extends React.Component {
         if (currentCalc==="dist-to-ttk") {
             hpSelector = [
                 <div className="select-box" key="0">
-                    <label className="calc-label">Enemy HP</label>
+                    <label className="select-label">Enemy HP</label>
                     <select name="enemyHP" onChange={this.inputChange}>
                         <option value="100">Standard (100hp)</option>
                         <option value="60">Hunter (60hp)</option>
@@ -70,7 +70,7 @@ class Calculator extends React.Component {
         return (
             <div id="calc-select-boxes">
                 <div className="select-box">
-                    <label className="calc-label">Calculation</label>
+                    <label className="select-label">Calculation</label>
                     <select name="currentCalc" onChange={this.inputChange}>
                         <option value="dist-to-dmg">Distance to Damage</option>
                         <option value="dmg-to-dist">Damage to Distance</option>
@@ -78,13 +78,13 @@ class Calculator extends React.Component {
                     </select>
                 </div>
                 <div className="select-box">
-                    <label className="calc-label">Weapon</label>
+                    <label className="select-label">Weapon</label>
                     <select name="currentWep" onChange={this.inputChange}>
                         {wepOptions}
                     </select>
                 </div>
                 <div className="select-box">
-                    <label className="calc-label">Hit Area</label>
+                    <label className="select-label">Hit Area</label>
                     <select name="hitArea" onChange={this.inputChange}>
                         <option value="1">Body</option>
                         <option value={wep.headshotMult}>Head</option>
@@ -93,7 +93,7 @@ class Calculator extends React.Component {
                     </select>
                 </div>
                 <div className="select-box">
-                    <label className="calc-label">Wallbang</label>
+                    <label className="select-label">Wallbang</label>
                     <select name="wallbang" onChange={this.inputChange}>
                         <option value="1">No</option>
                         <option value={1 - (0.5 * wep.pierce)}>Yes</option>
@@ -110,12 +110,12 @@ class Calculator extends React.Component {
                 {this.displaySelectors(this.state.currentCalc)}
                 <div id="input-output">
                     <div className="column">
-                        <label className="calc-label">Input</label>
+                        <label className="select-label">Input</label>
                         <input type="number" name="numInput" onChange={this.inputChange} id="num-input"/>
                     </div>
                     <div className="column">
-                        <label className="calc-label">Output</label>
-                        <label className="calc-label">
+                        <label className="select-label">Output</label>
+                        <label className="select-label">
                             <strong>
                                 {this.calculate(
                                     this.state.numInput,

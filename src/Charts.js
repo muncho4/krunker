@@ -268,7 +268,7 @@ class Charts extends React.Component {
                 </div>
                 {this.displayWeaponRow(this.state.currentWep, wep, "0", true)}
                 <div id="info-box">
-                    <div>
+                    <div id="props-box">
                         {info}
                     </div>
                     <div id="graphs-column">
