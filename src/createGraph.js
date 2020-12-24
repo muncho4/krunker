@@ -3,6 +3,43 @@ import React from 'react';
 function createGraph(opt) {
     let options = opt
     
+    // function setDefaults(optionsInput) {
+    //     let defaultSettings = {
+    //         title: "graph title",
+    //         fontFamily: "Arial",
+    //         decimals: 2,
+    //         legend: true,
+    //         width: 800,
+    //         height: 600,
+    //         labelFontSize: "18px",
+    //         titleFontSize: "50px",
+    //         bgLineIncsColor: "gray",
+    //         bgLineWidth: "1",
+    //         //labelstartend
+    //         xAxis: {
+    //             title: "x axis title",
+    //             xIncrements: 10,
+    //             min: 0,
+    //             max: 100,
+    //             bgLineIncs: 10,
+    //             start: 77,
+    //             end: 775
+    //         },
+    //         yAxis: {
+    //             title: "y axis title",
+    //             xIncrements: 10,
+    //             min: 0,
+    //             max: 100,
+    //             bgLineIncs: 10,
+    //             start: 77,
+    //             end: 775
+    //         },
+    //         outerBorder: false,
+    //         graphClass: null,
+    //         data: []
+    //     }
+    // }
+
     //defaults
     if (options.title===false) options.title = ""
     else options.title = options.title || "graph title" 
@@ -41,10 +78,10 @@ function createGraph(opt) {
             let biggestY = 0
             for (let dataSet of options.data) {
                 for (let y of dataSet.y) {
-                                if (y > biggestY) biggestY = y
-                        }
-                }	
-                options.yMax = biggestY
+                    if (y > biggestY) biggestY = y
+                }
+            }	
+            options.yMax = biggestY
             if (options.yMax===options.yMin) options.yMax = options.yMin + 1
         } else options.yMax = 10
     }

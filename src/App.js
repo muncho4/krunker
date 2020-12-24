@@ -46,7 +46,7 @@ class App extends React.Component {
 
         return (
             <div>
-                <h1>Krunker Weapon Stats v0.1.2 (Game Data v3.3.4)</h1>
+                <h1>Krunker Weapon Stats v0.1.2 (Game Data v3.4.0)</h1>
                 <div id="tabs">
                     <div className="tab" style={chartsTabStyle} onClick={() => this.changeComponent("charts")}>
                         <label className="tab-label"><strong>Charts</strong></label>

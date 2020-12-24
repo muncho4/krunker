@@ -5,7 +5,7 @@ const weapons = {
         name: "Assault Rifle",
         pictureURL: weaponImages.AR,
         damage: 23,
-        timeBetweenShots: 110,
+        timeBetweenShots: 120,
         fireMode: "Auto",
         magSize: 30,
         reloadTime: 1400,
